@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RC Car Control System</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: #0b0e11; color: #eaeef3; margin: 0; }
+    header { padding: 32px 24px; background: #11161d; border-bottom: 1px solid #1f2733; }
+    main { padding: 24px; max-width: 880px; margin: 0 auto; }
+    h1 { margin: 0 0 8px; }
+    code, pre { background: #0e131a; padding: 2px 6px; border-radius: 6px; }
+    .card { background: #0e131a; padding: 16px; border: 1px solid #1f2733; border-radius: 12px; margin-bottom: 16px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bluetooth RC Car – Android + Arduino</h1>
+    <p>Compose app + HC‑05 + L293D (Uno)</p>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Android App</h2>
+      <p>Open <code>android</code> in Android Studio (Giraffe+). Build and run. Requires Android 7.0+.</p>
+    </section>
+    <section class="card">
+      <h2>Arduino Firmware</h2>
+      <p>Open <code>arduino/rc_car.ino</code> in Arduino IDE 2.3.2+. Upload to Uno. HC‑05 at 9600 baud.</p>
+    </section>
+    <section class="card">
+      <h2>Wiring</h2>
+      <ul>
+        <li>HC‑05 TX → Pin 10, RX ← Pin 11</li>
+        <li>M1 Steering: IN1=2, IN2=3, EN1(PWM)=5</li>
+        <li>M3 Propulsion: IN3=4, IN4=6, EN3(PWM)=7</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
